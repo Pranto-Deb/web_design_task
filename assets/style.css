@@ -1,0 +1,80 @@
+
+body {
+    transition: background-color .5s;
+}
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 60;
+    right: 0;
+    background-color: #fff;
+    /* border: 1px solid #000; */
+    overflow: hidden;
+    transition: 0.5s;
+}
+
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.5s;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    transition: 0.5s;
+    /* margin-left: 50px; */
+}
+
+@media screen and (max-height: 100vh) {
+    .sidenav {
+        padding-top: 15px;
+    }
+
+    .sidenav a {
+        font-size: 18px;
+    }
+}
+
+#overlay {
+    position: fixed;
+    display: none;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.scroller {
+    overflow-y: auto;
+}
+
+/* scrooler custom */
+.scroller::-webkit-scrollbar {
+    width: 5px;
+}
+
+.scroller::-webkit-scrollbar-track {
+    background: #ffffff;
+    border-radius: 5px;
+}
+
+.scroller::-webkit-scrollbar-thumb {
+    background-color: #ffffff;
+    border-radius: 5px;
+    /* border: 2px solid #f36b7f; */
+}
